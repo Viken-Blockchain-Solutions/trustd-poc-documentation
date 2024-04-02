@@ -21,17 +21,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/identity_verification/</loc>
-         <lastmod>2024-04-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://example.com/overview/</loc>
-         <lastmod>2024-04-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://example.com/verifiers/</loc>
          <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
