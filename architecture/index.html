@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/architecture/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Trustd POC Architecture Overview - TrustD POC Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Trustd POC Architecture Overview";
+        var mkdocs_page_input_path = "architecture.md";
+        var mkdocs_page_url = "/architecture/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> TrustD POC Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../overview/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Technical Documentation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../technical/system_architecture/">System Architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../technical/key_concepts/">Key Concepts and Technologies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../technical/installation_configuration/">Installation and Configuration</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Documentation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../user/roles_in_trustd_ecosystem.md">Roles in TrustD Ecosystem</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../user/issuing_a_vc.md">Issuing a Verifiable Credential</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../user/accepting_a_vc.md">Accepting a Verifiable Credential</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../user/verifying_a_vc.md">Verifying a Verifiable Credential</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../user/managing_credentials.md">Managing Your Credentials</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../user/security_best_practices.md">Best Practices for Security</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../faqs.md">FAQs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../glossary.md">Glossary</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">TrustD POC Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Trustd POC Architecture Overview</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="trustd-poc-architecture-overview">Trustd POC Architecture Overview</h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Trustd Proof of Concept (POC) aims to streamline identity interactions and transactions within the Transport and Logistics industry by leveraging the Self-Sovereign Identity (SSI) model. This model facilitates a decentralized and user-centric approach to identity verification, where individuals or organizations can own, control, and share their credentials securely and with privacy.</p>
+<h2 id="system-components">System Components</h2>
+<h3 id="dockio-platform">Dock.io Platform</h3>
+<p>The Dock.io platform serves as the backbone of the Trustd POC, enabling the issuance, holding, and verification of Verifiable Credentials (VCs). It provides a decentralized network for secure and verifiable transactions, ensuring the integrity and authenticity of the credentials issued and shared within the Trustd ecosystem.</p>
+<h3 id="participants">Participants</h3>
+<ul>
+<li><strong>Issuer</strong>: An entity, typically a business or organization, that issues digital credentials to individuals or other entities. In the Trustd POC, the issuer is a Trustd Verified business that issues a Vehicle Insurance Certificate to a holder.</li>
+<li><strong>Holder</strong>: An individual or entity that receives and stores digital credentials in their Dock.io wallet app. The holder can share their credentials with verifiers as needed.</li>
+<li><strong>Verifier</strong>: An entity that requests and verifies digital credentials from holders to confirm their authenticity and validity. Verifiers in the Trustd ecosystem can also verify credentials belonging to the issuer.</li>
+</ul>
+<h2 id="architecture-flow">Architecture Flow</h2>
+<ol>
+<li><strong>Issuance of 'Trustd Verified Issuer' Credential</strong>: A business becomes 'Trustd Verified', and Trustd issues a 'Trustd Verified Issuer' verifiable credential to the Issuer.</li>
+<li><strong>Credential Issuance to Holder</strong>: The issuer issues a Verifiable Credential, such as a Vehicle Insurance Certificate, to the holder through the Dock.io platform. This process involves selecting a Trustd verified user, populating the credential metadata, and either issuing the credential directly to the holder's DID or via email.</li>
+<li><strong>Credential Acceptance by Holder</strong>: The holder accepts the credential in their Dock.io wallet app, securely storing it for future verification requests.</li>
+<li><strong>Verification Request by Verifier</strong>: A verifier accesses a view where they can verify the credentials of entities appearing in their carrier list. The verifier sends a verification request to the holder.</li>
+<li><strong>Credential Presentation and Verification</strong>: The holder presents the requested VC to the verifier, including any selectively disclosed attributes. The verifier confirms the credential's authenticity and validity.</li>
+</ol>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li><strong>Granular and Permissioned Data Sharing</strong>: Holders can control which attributes of their credentials are shared with verifiers, enhancing privacy and data security.</li>
+<li><strong>Decentralized Identity (DID)</strong>: Utilizes decentralized identifiers (DIDs) for secure and direct identification of entities within the ecosystem.</li>
+<li><strong>'Trustd Verified' Watermarks</strong>: Credentials and documents presented within the system bear a 'Verified by Trustd' watermark, signifying their verified status.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>The Trustd POC architecture represents a significant advancement in identity verification within the Transport and Logistics industry. By leveraging the SSI model through the Dock.io platform, the Trustd ecosystem facilitates a more efficient, secure, and user-controlled method of sharing and verifying digital credentials.</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

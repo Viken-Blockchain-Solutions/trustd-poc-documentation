@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/technical/installation_configuration/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Installation and Configuration - TrustD POC Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Installation and Configuration";
+        var mkdocs_page_input_path = "technical/installation_configuration.md";
+        var mkdocs_page_url = "/technical/installation_configuration/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> TrustD POC Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../overview/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Technical Documentation</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../system_architecture/">System Architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../key_concepts/">Key Concepts and Technologies</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Installation and Configuration</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-1-clone-the-repository">Step 1: Clone the Repository</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-2-configure-environment-variables">Step 2: Configure Environment Variables</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-3-build-and-run-with-docker-compose">Step 3: Build and Run with Docker Compose</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-4-verifying-the-installation">Step 4: Verifying the Installation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#conclusion">Conclusion</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Documentation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../user/roles_in_trustd_ecosystem.md">Roles in TrustD Ecosystem</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../user/issuing_a_vc.md">Issuing a Verifiable Credential</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../user/accepting_a_vc.md">Accepting a Verifiable Credential</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../user/verifying_a_vc.md">Verifying a Verifiable Credential</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../user/managing_credentials.md">Managing Your Credentials</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../user/security_best_practices.md">Best Practices for Security</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../faqs.md">FAQs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../glossary.md">Glossary</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">TrustD POC Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Technical Documentation</li>
+      <li class="breadcrumb-item active">Installation and Configuration</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="installation-and-configuration-guide">Installation and Configuration Guide</h1>
+<p>This document provides step-by-step instructions for installing and configuring the necessary components to get the TrustD POC platform up and running. This guide is intended for system administrators and developers who are responsible for setting up the TrustD POC environment.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before beginning the installation process, ensure that you have:</p>
+<ul>
+<li>A modern operating system capable of running Docker (Linux, macOS, or Windows).</li>
+<li>Docker installed on your machine. If you do not have Docker installed, follow the installation instructions for your specific operating system on the <a href="https://docs.docker.com/get-docker/">Docker website</a>.</li>
+<li>Docker Compose installed, for orchestrating multiple Docker containers. Install Docker Compose by following the instructions on the <a href="https://docs.docker.com/compose/install/">official Docker Compose website</a>.</li>
+</ul>
+<h2 id="step-1-clone-the-repository">Step 1: Clone the Repository</h2>
+<p>Clone the TrustD POC repository to your local machine using Git. Open a terminal and run the following command:</p>
+<pre><code class="language-bash">git clone https://github.com/[TRUSTD]/trustd_poc.git
+cd trustd_poc
+</code></pre>
+<h2 id="step-2-configure-environment-variables">Step 2: Configure Environment Variables</h2>
+<p>Navigate to the project directory and copy the sample environment variables file to create your own <code>.env</code> file:</p>
+<pre><code class="language-bash">cp .env.sample .env
+</code></pre>
+<p>Edit the <code>.env</code> file using your preferred text editor to set up your environment variables. This file will typically include database configurations, API keys, and other platform-specific settings.</p>
+<h2 id="step-3-build-and-run-with-docker-compose">Step 3: Build and Run with Docker Compose</h2>
+<p>With Docker and Docker Compose installed, and your environment variables configured, you can now build and run the TrustD POC platform. From the root of the project directory, execute the following command:</p>
+<pre><code class="language-bash">docker-compose up --build
+</code></pre>
+<p>This command will build the Docker images for the TrustD POC platform and start the services defined in the <code>docker-compose.yml</code> file. Wait for the process to complete, and ensure all services are up and running without errors.</p>
+<h2 id="step-4-verifying-the-installation">Step 4: Verifying the Installation</h2>
+<p>Once the Docker containers are running, you can verify the installation by accessing the TrustD POC web interface. Open a web browser and navigate to:</p>
+<pre><code class="language-bash">http://localhost:[PORT]
+</code></pre>
+<p>Replace <code>PORT</code> with the actual port number configured for accessing the TrustD POC platform, as specified in your <code>.env</code> file or <code>docker-compose.yml</code>.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>If you encounter issues during the installation process, review the container logs for any error messages:</p>
+<pre><code class="language-bash">docker-compose logs
+</code></pre>
+<p>Common issues may include incorrect environment variable settings, issues connecting to external services, or permission errors. Adjust your configuration as necessary and restart the Docker containers.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>You have successfully installed and configured the TrustD POC platform. For detailed documentation on using the platform and managing Verifiable Credentials, refer to the User Documentation and Technical Documentation sections of this guide.</p>
+<hr />
+<p><strong>Note:</strong> This installation guide is based on a generic setup process and should be adapted to match the specific requirements and configurations of the TrustD POC project. Always refer to the official repository documentation for the most accurate and up-to-date information.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../key_concepts/" class="btn btn-neutral float-left" title="Key Concepts and Technologies"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../key_concepts/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
