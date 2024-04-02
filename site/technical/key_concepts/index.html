@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/technical/key_concepts/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Key Concepts and Technologies - TrustD POC Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Key Concepts and Technologies";
+        var mkdocs_page_input_path = "technical/key_concepts.md";
+        var mkdocs_page_url = "/technical/key_concepts/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> TrustD POC Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../overview/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Technical Documentation</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../system_architecture/">System Architecture</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Key Concepts and Technologies</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#verifiable-credentials-vc">Verifiable Credentials (VC)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#importance-in-the-digital-verification-process">Importance in the Digital Verification Process</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#standards-and-protocols">Standards and Protocols</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#w3c-verifiable-credentials-data-model">W3C Verifiable Credentials Data Model</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#decentralized-identifiers-did">Decentralized Identifiers (DID)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#dockio-blockchain">Dock.io Blockchain</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#implementation-on-the-trustd-platform">Implementation on the TrustD Platform</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation_configuration/">Installation and Configuration</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Documentation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../user/roles_in_trustd_ecosystem.md">Roles in TrustD Ecosystem</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../user/issuing_a_vc.md">Issuing a Verifiable Credential</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../user/accepting_a_vc.md">Accepting a Verifiable Credential</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../user/verifying_a_vc.md">Verifying a Verifiable Credential</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../user/managing_credentials.md">Managing Your Credentials</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../user/security_best_practices.md">Best Practices for Security</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../faqs.md">FAQs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../glossary.md">Glossary</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">TrustD POC Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Technical Documentation</li>
+      <li class="breadcrumb-item active">Key Concepts and Technologies</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="key-concepts-and-technologies">Key Concepts and Technologies</h1>
+<p>The TrustD Proof of Concept (POC) introduces several foundational concepts and technologies crucial for understanding how the platform operates. This document elaborates on these concepts and their significance within the TrustD ecosystem.</p>
+<hr />
+<h2 id="verifiable-credentials-vc">Verifiable Credentials (VC)</h2>
+<p>Verifiable Credentials (VCs) are digital equivalents of traditional paper-based credentials, like a driver's license or university diploma, but with enhanced security, privacy, and verifiability features. They play a pivotal role in the TrustD POC project, leveraging blockchain technology to transform how identities and credentials are verified within the Transport and Logistics industry.</p>
+<h3 id="importance-in-the-digital-verification-process">Importance in the Digital Verification Process</h3>
+<p>VCs are crucial in establishing a trust framework that is independent of centralized verification authorities. This trust is achieved through cryptographic proofs that confirm the integrity and origin of the credential without disclosing more information than necessary. This property is particularly important in the Transport and Logistics industry, where businesses often need to verify credentials such as vehicle insurance certificates, driver qualifications, and company certifications rapidly and securely.</p>
+<h3 id="standards-and-protocols">Standards and Protocols</h3>
+<p>The TrustD POC project adheres to established standards and protocols for the creation, issuance, and verification of VCs to ensure interoperability, security, and privacy:</p>
+<h4 id="w3c-verifiable-credentials-data-model">W3C Verifiable Credentials Data Model</h4>
+<p>TrustD utilizes the <a href="https://www.w3.org/TR/vc-data-model/">W3C Verifiable Credentials Data Model</a>, which provides a standardized method to express credentials on the Web in a way that is cryptographically secure, privacy-respecting, and machine-verifiable. This standard defines a generic model to create VCs that can be shared across different platforms without requiring a centralized issuer or verifier.</p>
+<h4 id="decentralized-identifiers-did">Decentralized Identifiers (DID)</h4>
+<p>DIDs are a new type of identifier for verifiable, "self-sovereign" digital identity. DIDs are fully under the control of the DID subject, independent from any centralized registry, identity provider, or certificate authority. In the context of TrustD, DIDs are used to securely associate issuers, holders, and verifiers with their digital identities, enabling a more direct and secure form of identity verification.</p>
+<h4 id="dockio-blockchain">Dock.io Blockchain</h4>
+<p>The Dock.io blockchain plays a critical role in the anchoring of VCs. By recording a hash of the VC on a decentralized ledger, TrustD ensures that each credential can be verified as untampered and authentic. This process leverages the immutable nature of blockchain technology to provide a time-stamped record of credential issuance and revocation, enhancing the overall trust in the digital verification process.</p>
+<h3 id="implementation-on-the-trustd-platform">Implementation on the TrustD Platform</h3>
+<p>On the TrustD platform, the issuance and verification of VCs follow a streamlined process:
+1. <strong>Issuance</strong>: An issuer, after becoming 'Trustd Verified', creates a VC for a holder, embedding the necessary claims and signing it cryptographically.
+2. <strong>Acceptance</strong>: The holder accepts the VC, storing it securely in their digital wallet.
+3. <strong>Verification</strong>: A verifier requests proof of a specific claim within the VC. The holder presents a verification derived from the VC, which the verifier checks against the public key recorded on the blockchain.</p>
+<p>This end-to-end process not only simplifies the verification of credentials but also significantly enhances security and privacy, mitigating the risk of fraud and unauthorized data disclosure.</p>
+<hr />
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../system_architecture/" class="btn btn-neutral float-left" title="System Architecture"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../installation_configuration/" class="btn btn-neutral float-right" title="Installation and Configuration">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../system_architecture/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../installation_configuration/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

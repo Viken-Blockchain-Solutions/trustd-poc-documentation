@@ -1,0 +1,20 @@
+site_name: TrustD POC Documentation
+site_url: https://example.com/
+nav:
+    - Home: index.md
+    - Introduction:
+        - Overview: overview.md
+    - Technical Documentation:
+        - System Architecture: technical/system_architecture.md
+        - Key Concepts and Technologies: technical/key_concepts.md
+        - Installation and Configuration: technical/installation_configuration.md
+    - User Documentation:
+        - Roles in TrustD Ecosystem: user/roles_in_trustd_ecosystem.md
+        - Issuing a Verifiable Credential: user/issuing_a_vc.md
+        - Accepting a Verifiable Credential: user/accepting_a_vc.md
+        - Verifying a Verifiable Credential: user/verifying_a_vc.md
+        - Managing Your Credentials: user/managing_credentials.md
+        - Best Practices for Security: user/security_best_practices.md
+    - FAQs: faqs.md
+    - Glossary: glossary.md
+theme: readthedocs
