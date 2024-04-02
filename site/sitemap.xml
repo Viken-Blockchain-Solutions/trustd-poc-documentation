@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://example.com/</loc>
+         <loc>https://viken-blockchain-solutions.github.io/trustd-poc-documentation/</loc>
          <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/about/</loc>
+         <loc>https://viken-blockchain-solutions.github.io/trustd-poc-documentation/about/</loc>
          <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/architecture/</loc>
+         <loc>https://viken-blockchain-solutions.github.io/trustd-poc-documentation/architecture/</loc>
          <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/getting_started/</loc>
+         <loc>https://viken-blockchain-solutions.github.io/trustd-poc-documentation/getting_started/</loc>
          <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/overview/</loc>
+         <loc>https://viken-blockchain-solutions.github.io/trustd-poc-documentation/overview/</loc>
          <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/technical/installation_configuration/</loc>
+         <loc>https://viken-blockchain-solutions.github.io/trustd-poc-documentation/technical/installation_configuration/</loc>
          <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/technical/key_concepts/</loc>
+         <loc>https://viken-blockchain-solutions.github.io/trustd-poc-documentation/technical/key_concepts/</loc>
          <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/technical/system_architecture/</loc>
+         <loc>https://viken-blockchain-solutions.github.io/trustd-poc-documentation/technical/system_architecture/</loc>
          <lastmod>2024-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>

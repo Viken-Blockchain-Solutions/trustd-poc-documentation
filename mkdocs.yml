@@ -1,5 +1,5 @@
 site_name: TrustD POC Documentation
-site_url: https://example.com/
+site_url: https://viken-blockchain-solutions.github.io/trustd-poc-documentation/
 nav:
     - Home: index.md
     - Introduction:
